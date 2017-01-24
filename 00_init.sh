@@ -1,7 +1,7 @@
 #!/bin/sh
 
-# 最初に一回だけ実行する
-# sudo sh init.sh
+# 最初に一回だけ実行する（root）
+# sudo sh 00_init.sh
 
 sudo yum install -y epel-release
 sudo yum install -y --enablerepo=epel libmcrypt libmcrypt-devel
