@@ -27,7 +27,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
  config.vm.define :ctl, primary: true do | ctl |
     ctl.vm.hostname = "ctl"
     repos_dir = File.expand_path("#{File.dirname(__FILE__)}/../../")+"/"
-    ctl.vm.synced_folder "#{repos_dir}", "/usr/share/#{PROJECT_CODE}", :create => true, :owner=> 'vagrant', :group=> 'vagrant', :mount_options => ["uid=48,gid=48,dmode=0777,fmode=0777"]
+    ctl.vm.synced_folder "#{repos_dir}", "/home/vagrant/repos", :create => true, :owner=> 'vagrant', :group=> 'vagrant', :mount_options => ["uid=48,gid=48,dmode=0777,fmode=0777"]
     ctl.vm.network "private_network", type: "dhcp"
 #    ctl.vm.network :private_network, ip: "192.168.33.2", virtualbox__intnet: "intnet"
 #    ctl.vm.network "forwarded_port", guest: 22, host: 2202
