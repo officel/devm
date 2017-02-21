@@ -12,3 +12,7 @@ sudo yum install -y gcc* compat-gcc* compat-glibc* compat-lib*
 sudo yum install -y zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel perl-devel
 sudo yum install -y libxml2-devel libcurl-devel libxslt-devel libjpeg-devel libpng-devel freetype-devel libtidy-devel
 sudo yum install -y tmux
+
+# CentOS 7
+sudo timedatectl set-timezone Asia/Tokyo
+sudo localectl set-locale LANG=ja_JP.utf8
