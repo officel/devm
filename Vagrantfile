@@ -27,7 +27,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     ctl.vm.hostname = "ctl"
     repos_dir = File.expand_path("#{File.dirname(__FILE__)}/../../../")+"/"
     ctl.vm.synced_folder "#{repos_dir}", "/home/vagrant/repos", :create => true, :owner=> 'vagrant', :group=> 'vagrant', :mount_options => ["uid=48,gid=48,dmode=0777,fmode=0777"]
-    ctl.vm.network "private_network", ip: "192,168.33.2"
+    ctl.vm.network "private_network", ip: "192.168.33.3"
     ctl.vm.provider "virtualbox" do |v|
       v.name = PROJECT_CODE3 + "-ctl"
       v.memory = 4096
