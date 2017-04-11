@@ -3,6 +3,7 @@
 # 最初に一回だけ実行する（root）
 # sudo sh 00_init.sh
 
+sudo sh -c "echo 'exclude=kernel*' >> /etc/yum.conf"
 sudo yum install -y epel-release
 sudo yum install -y --enablerepo=epel libmcrypt libmcrypt-devel
 sudo yum update -y
