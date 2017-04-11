@@ -9,4 +9,5 @@ developers virtual machine for vagrant w/z virtualbox
 * sh 20_anyenv.sh
 * sh 21_anyenv_install_xxenv.sh
 * sh 22_xxenv_wahtsnew.sh
+* sh 42_docker_install.sh
 
